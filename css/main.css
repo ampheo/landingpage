@@ -1,0 +1,135 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+    font-family: 'PT Serif', serif;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  @media (max-width: 768px) {
+    section .container  {
+      text-align: center;
+    }
+    section .container .caption {
+      padding-left: 0px !important;
+    }
+    section .container .caption h1 {
+      left: 0px !important;
+    }
+    section .container .caption ul{
+      padding-left: 0;
+    }
+  
+  }
+  section {
+    padding: 50px;
+  }
+  section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: calc(100vh - 100px );
+
+
+  }
+  section .container .imgicon {
+    height: 100%;
+
+  }
+
+  section .container .imgicon .image {
+        height: calc(100% - 100px);
+        overflow: hidden;
+
+  }
+  section .container .imgicon img {
+    height: 100%;
+    transition: 0.5s;
+
+  }
+  section .container .imgicon img:hover {
+    transform: scale(1.1);
+
+  }
+section .container .imgicon .socialmedia {
+  margin: 10px 0px;
+}
+
+
+section .container .imgicon .socialmedia a i {
+  color: #000;
+  padding: 5px;
+  border: 1.5px solid #fff;
+  margin-right: 15px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+section .container .imgicon .socialmedia a:hover i {
+  color: #fff;
+  background-color: #000;
+  box-shadow: 0 0 15px #000;
+  border: 1.5px solid #000;
+
+
+}
+section .container .imgicon .socialmedia p {
+  font-weight: 200;
+}
+section .container .caption {
+    padding-left: 20px;
+  }
+  section .container .caption h1 {
+    position: relative;
+    font-size: 70px;
+    left: -70px;
+    margin: 0;
+  }
+  section .container .caption h2 {
+    font-size: 70px;
+    margin: 0;
+  }
+  section .container .caption ul li {
+    list-style: none;
+    margin-bottom: 20px;
+
+  }
+  section .container .caption ul li a {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 300px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border: 1px solid #000;
+  }
+  section .container .caption ul li a:hover {
+    color: #000;
+    background-color: #fff;
+ 
+  }
+  
